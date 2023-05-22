@@ -1,0 +1,92 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Landing Page | Taimoor Shahzada</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <p>Catalogue,Profile</p>
+      <div class="logo">
+        <span>Jean</span>
+        <span>Phillipe</span>
+      </div>
+      <p>Email,Instagram,Unsplash</p>
+    </header>
+    <section>
+      <div class="wrapper">
+        <div class="section-container">
+          <div class="left-side-container">
+            <span id="left-side-img-span">
+              <img src="./images/img1.jpg" alt="" />
+            </span>
+          </div>
+          <div class="right-side-container">
+            <span>
+              <h6 id="innerTextContent">Le Oh Diva Impulse No1</h6>
+            </span>
+            <ul>
+              <li>
+                <span
+                  ><img
+                    src="./images/img1.jpg"
+                    alt=""
+                    onmouseover="contentChange(this)"
+                    class="imgHover"
+                    id="img1"
+                /></span>
+              </li>
+              <li>
+                <span
+                  ><img
+                    src="./images/img2.jpg"
+                    onmouseover="contentChange(this)"
+                    alt=""
+                    class="imgHover"
+                    id="img2"
+                /></span>
+              </li>
+              <li>
+                <span
+                  ><img
+                    src="./images/img3.jpg"
+                    alt=""
+                    onmouseover="contentChange(this)"
+                    class="imgHover"
+                    id="img3"
+                /></span>
+              </li>
+              <li>
+                <span
+                  ><img
+                    src="./images/img4.jpg"
+                    onmouseover="contentChange(this)"
+                    alt=""
+                    class="imgHover"
+                    id="img4"
+                /></span>
+              </li>
+              <li>
+                <span
+                  ><img
+                    src="./images/img5.jpg"
+                    alt=""
+                    class="imgHover"
+                    onmouseover="contentChange(this)"
+                    id="img5"
+                /></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

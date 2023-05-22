@@ -1,0 +1,119 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e3e1d9;
+  color: #181818;
+  overflow: hidden;
+  font-family: "Grifinito L";
+}
+span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* header style  */
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  width: 100%;
+  height: fit-content;
+}
+header p {
+  font-family: "Neutral Face";
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0px 40px;
+  color: #807f7b;
+}
+header .logo {
+  font-size: 40px;
+}
+
+/* main container  */
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
+}
+section .wrapper {
+  padding: 0px 40px;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  width: 100%;
+}
+section .section-container {
+  display: grid;
+  grid-template-columns: 1.75fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 60px;
+  height: 100%;
+}
+.section-container .left-side-container {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  overflow: hidden;
+}
+.left-side-container span {
+  width: 100%;
+  position: relative;
+}
+.left-side-container span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: center;
+}
+.section-container .right-side-container {
+  width: 100%;
+  display: flex;
+  align-items: self-end;
+  flex-direction: column;
+  height: 100%;
+  justify-content: end;
+}
+.right-side-container > span {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  justify-self: start;
+  align-self: self-start;
+}
+.right-side-container > span > h6 {
+  font-size: 210px;
+  line-height: 0.75;
+  font-weight: normal;
+}
+
+.right-side-container ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  width: 100%;
+}
+.right-side-container ul li {
+  height: 260px;
+}
+.right-side-container ul li span {
+  height: 100%;
+}
+.right-side-container ul li span img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.5, 1.5);
+  object-fit: cover;
+  object-position: center;
+}
